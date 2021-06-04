@@ -20,7 +20,7 @@ var (
 	c           config
 	config_path = flag.String("c", "config.toml", "Path to config")
 	domain      = os.Args[len(os.Args)-1]
-	id          = flag.String("id", "0", "ID of Porkbun DNS entry, use -l to view ID")
+	id          = flag.String("id", "", "ID of Porkbun DNS entry, use -l to view ID")
 	interval    = flag.Duration("i", 1*time.Hour, "Time between updates")
 	list        = flag.Bool("l", false, "List DNS records under domain")
 	name        = flag.String("n", "", "Name of DNS record")

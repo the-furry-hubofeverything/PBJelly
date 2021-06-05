@@ -119,9 +119,9 @@ func main() {
 				log.Fatal(err)
 			}
 
+			log.Println("Current IP: " + pubIP)
 			for _, r := range records {
 				if *list {
-					log.Println("Current IP: " + pubIP)
 					log.Printf("%+v\n", r)
 					os.Exit(0)
 				} else if (*id == "" || r.ID == *id) && (*name == "" || r.Name == *name) &&
